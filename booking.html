@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="id">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <meta content="Ajukan booking layanan Behind The Vibe." name="description"/>
+  <title>
+   Book Your Date &mdash; Behind The Vibe
+  </title>
+  <link href="styles.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header class="site-header">
+   <div class="container nav">
+    <a class="brand" href="index.html">
+     <strong>
+      Behind The Vibe
+     </strong>
+     <span>
+      Content Creator
+     </span>
+    </a>
+    <nav class="navlinks">
+     <a href="index.html">
+      Home
+     </a>
+     <a href="about.html">
+      About
+     </a>
+     <a href="packages.html">
+      Services
+     </a>
+     <a href="join-us.html">
+      Join Us
+     </a>
+     <a href="contact.html">
+      Contact
+     </a>
+    </nav>
+    <a class="btn small" href="booking.html">
+     Book Now &nearrow;
+    </a>
+    <button aria-expanded="false" aria-label="Buka menu" class="menu-toggle">
+     ☰
+    </button>
+   </div>
+  </header>
+  <main>
+   <section class="page-hero">
+    <div class="container">
+     <div class="eyebrow">
+      Let's make it memorable
+     </div>
+     <h1>
+      Your story,
+      <br/>
+      <em>
+       starts here.
+      </em>
+     </h1>
+     <p>
+      Ceritakan sedikit tentang acaramu. Pengajuan akan dikirim ke email admin setelah integrasi email diaktifkan.
+     </p>
+    </div>
+   </section>
+   <section class="section">
+    <div class="container intro-grid">
+     <div>
+      <div class="eyebrow">
+       Start your booking
+      </div>
+      <h2>
+       Tell us about
+       <br/>
+       <em>
+        your moment.
+       </em>
+      </h2>
+      <p>
+       Isi detail awal kebutuhan dokumentasimu melalui formulir berikut.
+      </p>
+      <p class="form-note">
+       Pengajuan melalui formulir belum menjadi konfirmasi booking. Tanggal dianggap terpesan setelah mendapat konfirmasi dari tim Behind The Vibe.
+      </p>
+      <div class="notice">
+       Formulir sudah disiapkan. Integrasi email membutuhkan alamat admin dan endpoint Formspree/EmailJS/backend. Pengaturan ini tersedia di file script.js.
+      </div>
+     </div>
+     <form class="booking-form" id="booking-form">
+      <div class="field">
+       <label for="name">
+        Full name
+       </label>
+       <input id="name" name="name" placeholder="Nama lengkap" required=""/>
+      </div>
+      <div class="field">
+       <label for="phone">
+        WhatsApp number
+       </label>
+       <input id="phone" inputmode="tel" name="phone" placeholder="08xxxxxxxxxx" required=""/>
+      </div>
+      <div class="field">
+       <label for="event">
+        Event type
+       </label>
+       <select id="event" name="event" required="">
+        <option value="">
+         Choose event type
+        </option>
+        <option>
+         Wedding
+        </option>
+        <option>
+         Event
+        </option>
+        <option>
+         Personal
+        </option>
+       </select>
+      </div>
+      <div class="field">
+       <label for="date">
+        Event date
+       </label>
+       <input id="date" name="date" required="" type="date"/>
+      </div>
+      <div class="field">
+       <label for="location">
+        Event location
+       </label>
+       <input id="location" name="location" placeholder="Kota / venue" required=""/>
+      </div>
+      <div class="field">
+       <label for="package">
+        Service choice
+       </label>
+       <select disabled="" id="package" name="package" required="">
+        <option value="">
+         Pilih jenis acara terlebih dahulu
+        </option>
+       </select>
+      </div>
+      <div class="field full">
+       <label for="notes">
+        Additional notes (optional)
+       </label>
+       <textarea id="notes" name="notes" placeholder="Ceritakan kebutuhan atau detail acaramu" rows="4"></textarea>
+      </div>
+      <button class="btn fill full" type="submit">
+       Submit Booking &nearrow;
+      </button>
+      <p aria-live="polite" class="form-note full" id="booking-message">
+      </p>
+     </form>
+    </div>
+   </section>
+  </main>
+  <footer class="footer">
+   <div class="container">
+    <div class="footer-top">
+     <a class="brand" href="index.html">
+      <strong>
+       Behind The Vibe
+      </strong>
+      <span>
+       Content Creator
+      </span>
+     </a>
+     <div class="footer-links">
+      <a href="about.html">
+       About
+      </a>
+      <a href="packages.html">
+       Services
+      </a>
+      <a href="join-us.html">
+       Join Us
+      </a>
+      <a href="contact.html">
+       Contact
+      </a>
+      <a data-wa="Halo Behind The Vibe, saya ingin bertanya tentang layanan." href="#">
+       WhatsApp &nearrow;
+      </a>
+     </div>
+    </div>
+    <div class="copyright">
+     <span>
+      &copy; 2026 Behind The Vibe. All rights reserved.
+     </span>
+     <span>
+      CRAFTED WITH CARE &middot; TOLD FROM BEHIND THE VIBE.
+     </span>
+    </div>
+   </div>
+  </footer>
+  <script src="script.js">
+  </script>
+ </body>
+</html>
