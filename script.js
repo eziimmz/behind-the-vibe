@@ -7,9 +7,8 @@ const SITE_CONFIG = {
   instagram: "https://www.instagram.com/bhindthevibe?vrfl=MWR6bjZzZTJycXhlaQ%3D%3D&utm_source=qr", // Example: https://instagram.com/youraccount
   tiktok: "https://www.tiktok.com/@behindthevibe01?_r=1&_t=ZS-9B83NWGjl6C",    // Example: https://tiktok.com/@youraccount
   whatsappNumber: "6285178680912", // International format, digits only
-  bookingEndpoint: "https://formspree.io/f/mjyylwka", // Formspree/EmailJS/backend endpoint URL
-  googleFormEmbed: "https://docs.google.com/forms/d/e/1FAIpQLSf49A-IeIGSIeC_MNPW3qu6mZBQs2LCBS_xmaErqb7o0l_knQ/viewform", // Google Form embed URL for Join Us page
-  pricelistPdf: "assets/pricelist.pdf"
+  bookingEndpoint: "https://formspree.io/f/xvkklyda", // Formspree/EmailJS/backend endpoint URL
+  googleFormEmbed: "https://docs.google.com/forms/d/e/1FAIpQLSf49A-IeIGSIeC_MNPW3qu6mZBQs2LCBS_xmaErqb7o0l_knQ/viewform" // Google Form embed URL for Join Us page
 };
 
 // Mobile navigation.
@@ -29,13 +28,13 @@ function createWhatsAppLink(message) {
 
 document.querySelectorAll('[data-wa]').forEach((link) => {
   if (/^\d{8,15}$/.test(SITE_CONFIG.whatsappNumber)) {
-    link.href = createWhatsAppLink(link.dataset.wa || 'Halo Behind The Vibe, saya ingin bertanya tentang layanan.');
+    link.href = createWhatsAppLink(link.dataset.wa || 'Halo mimin BTV, saya ingin bertanya tentang layanan.');
     link.target = '_blank';
     link.rel = 'noopener noreferrer';
   } else {
     link.addEventListener('click', (event) => {
       event.preventDefault();
-      alert('Nomor WhatsApp Behind The Vibe belum diatur. Silakan tambahkan nomor di file script.js.');
+      alert('Nomor WhatsApp Behind The Vibe belum diatur.');
     });
   }
 });
@@ -49,7 +48,7 @@ document.querySelectorAll('[data-social]').forEach((link) => {
   } else {
     link.addEventListener('click', (event) => {
       event.preventDefault();
-      alert(`Link ${link.dataset.social} Behind The Vibe belum diatur di file script.js.`);
+      alert(`Link ${link.dataset.social} Behind The Vibe belum diatur.`);
     });
   }
 });
